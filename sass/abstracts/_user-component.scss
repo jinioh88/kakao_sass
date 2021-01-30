@@ -1,0 +1,48 @@
+@mixin setHW($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+.user-component {
+  justify-content: space-between;
+
+  &,
+  &__column:first-child {
+    display: flex;
+    align-items: center;
+  }
+
+  &__column:last-child {
+    opacity: 0.5;
+  }
+
+  &__avatar {
+    @include setHW(70px, 70px);
+    border-radius: 30px;
+    margin-right: 20px;
+  }
+
+  &__avatar--xl {
+    @include setHW(80px, 80px);
+  }
+
+  &__avatar--sm {
+    @include setHW(60px, 60px);
+    border-radius: 25px;
+  }
+
+  &__title {
+    font-weight: 600px;
+    font-size: 12px;
+
+    &--not-bold {
+      font-weight: 400;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    opacity: 0.5;
+  }
+}
