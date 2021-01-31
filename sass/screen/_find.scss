@@ -1,0 +1,88 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & i {
+      font-size: 35px;
+    }
+
+    & span {
+      margin-top: 18px;
+    }
+  }
+}
+
+.recommended-friends {
+  margin: 25px 0px;
+  padding: 25px 0px;
+  border-top: $main-border;
+  border-bottom: $main-border;
+
+  &__title {
+    font-size: 14px;
+    opacity: 0.5;
+  }
+
+  & span {
+    margin: 100px 0;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.5;
+  }
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 25px;
+
+  & span {
+    opacity: 0.6;
+  }
+}
+
+.open-post {
+  display: flex;
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+
+  &__hashtags {
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  &__members {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    &-count {
+      opacity: 0.5;
+      font-size: 14px;
+    }
+
+    & .divider {
+      width: 2px;
+      height: 15px;
+      margin: 0 5px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

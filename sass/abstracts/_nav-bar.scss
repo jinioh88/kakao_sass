@@ -21,5 +21,30 @@
     position: absolute;
     left: 15px;
     bottom: 15px;
+    animation: notificationAnimation 2s ease-in-out infinite;
+  }
+
+  &__btn {
+    animation: appearBtnAnimation 1s ease-in-out;
+  }
+}
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
   }
 }

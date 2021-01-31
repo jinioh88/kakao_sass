@@ -8,9 +8,11 @@
 @import "./abstracts/screen-header";
 @import "./abstracts/user-component";
 @import "./abstracts/badge";
+@import "./abstracts/no-mobile";
 
 @import "./screen/login";
 @import "./screen/friends";
+@import "./screen/find";
 
 .main-screen {
   padding: 0px $horizontal-space;
