@@ -7,6 +7,11 @@
 @import "./abstracts/nav-bar";
 @import "./abstracts/screen-header";
 @import "./abstracts/user-component";
+@import "./abstracts/badge";
 
 @import "./screen/login";
 @import "./screen/friends";
+
+.main-screen {
+  padding: 0px $horizontal-space;
+}
